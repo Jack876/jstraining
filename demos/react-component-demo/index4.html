@@ -13,9 +13,18 @@
     constructor(...args) {
       super(...args);
       this.state = {
-        text: 'World'
+        text: year + '年'
       };
     }
+
+
+
+
+    var d = new Date();
+    var year = d.getFullYear() // 当前年份
+    var month = d.getMonth() + 1 // 当前月份
+    var date = d.getDate() // 当前是每个月的几号
+    
 
     handleClick() {
       this.setState({
